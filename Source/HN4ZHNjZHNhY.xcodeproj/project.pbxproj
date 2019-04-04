@@ -8,12 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		5E66EDB52256782F000FF0BE /* HN4ZHNjZHNhY.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EDB32256782F000FF0BE /* HN4ZHNjZHNhY.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E66EE1422567B57000FF0BE /* JaibreakTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0322567B57000FF0BE /* JaibreakTest.swift */; };
+		5E66EE1522567B57000FF0BE /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0622567B57000FF0BE /* String+Base64.swift */; };
+		5E66EE1622567B57000FF0BE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E66EE0822567B57000FF0BE /* LICENSE */; };
+		5E66EE1722567B57000FF0BE /* b64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EE0922567B57000FF0BE /* b64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E66EE1822567B57000FF0BE /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0A22567B57000FF0BE /* decode.c */; };
+		5E66EE1922567B57000FF0BE /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0B22567B57000FF0BE /* encode.c */; };
+		5E66EE1A22567B57000FF0BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E66EE0C22567B57000FF0BE /* README.md */; };
+		5E66EE1B22567B57000FF0BE /* JailbreakInternalChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0E22567B57000FF0BE /* JailbreakInternalChecks.swift */; };
+		5E66EE1C22567B57000FF0BE /* JailbreakModules.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE1022567B57000FF0BE /* JailbreakModules.c */; };
+		5E66EE1D22567B57000FF0BE /* ModuleLoadedCheck.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE1122567B57000FF0BE /* ModuleLoadedCheck.c */; };
+		5E66EE1E22567B57000FF0BE /* JailbreakModules.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EE1222567B57000FF0BE /* JailbreakModules.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E66EE1F22567B57000FF0BE /* ModuleLoadedCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EE1322567B57000FF0BE /* ModuleLoadedCheck.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E66EDB02256782F000FF0BE /* HN4ZHNjZHNhY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HN4ZHNjZHNhY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E66EDB32256782F000FF0BE /* HN4ZHNjZHNhY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HN4ZHNjZHNhY.h; sourceTree = "<group>"; };
 		5E66EDB42256782F000FF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E66EE0322567B57000FF0BE /* JaibreakTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JaibreakTest.swift; sourceTree = "<group>"; };
+		5E66EE0622567B57000FF0BE /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		5E66EE0822567B57000FF0BE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E66EE0922567B57000FF0BE /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b64.h; sourceTree = "<group>"; };
+		5E66EE0A22567B57000FF0BE /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		5E66EE0B22567B57000FF0BE /* encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encode.c; sourceTree = "<group>"; };
+		5E66EE0C22567B57000FF0BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5E66EE0E22567B57000FF0BE /* JailbreakInternalChecks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JailbreakInternalChecks.swift; sourceTree = "<group>"; };
+		5E66EE1022567B57000FF0BE /* JailbreakModules.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JailbreakModules.c; sourceTree = "<group>"; };
+		5E66EE1122567B57000FF0BE /* ModuleLoadedCheck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ModuleLoadedCheck.c; sourceTree = "<group>"; };
+		5E66EE1222567B57000FF0BE /* JailbreakModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakModules.h; sourceTree = "<group>"; };
+		5E66EE1322567B57000FF0BE /* ModuleLoadedCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleLoadedCheck.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +71,69 @@
 			isa = PBXGroup;
 			children = (
 				5E66EDB32256782F000FF0BE /* HN4ZHNjZHNhY.h */,
+				5E66EE0222567B57000FF0BE /* Library */,
 				5E66EDB42256782F000FF0BE /* Info.plist */,
 			);
 			path = JailBreakTest;
+			sourceTree = "<group>";
+		};
+		5E66EE0222567B57000FF0BE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5E66EE0322567B57000FF0BE /* JaibreakTest.swift */,
+				5E66EE0D22567B57000FF0BE /* File Checks */,
+				5E66EE0F22567B57000FF0BE /* dyld Module Checks */,
+				5E66EE0422567B57000FF0BE /* Base64 Encoding */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		5E66EE0422567B57000FF0BE /* Base64 Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				5E66EE0522567B57000FF0BE /* Swift */,
+				5E66EE0722567B57000FF0BE /* C */,
+			);
+			path = "Base64 Encoding";
+			sourceTree = "<group>";
+		};
+		5E66EE0522567B57000FF0BE /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5E66EE0622567B57000FF0BE /* String+Base64.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		5E66EE0722567B57000FF0BE /* C */ = {
+			isa = PBXGroup;
+			children = (
+				5E66EE0822567B57000FF0BE /* LICENSE */,
+				5E66EE0922567B57000FF0BE /* b64.h */,
+				5E66EE0A22567B57000FF0BE /* decode.c */,
+				5E66EE0B22567B57000FF0BE /* encode.c */,
+				5E66EE0C22567B57000FF0BE /* README.md */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		5E66EE0D22567B57000FF0BE /* File Checks */ = {
+			isa = PBXGroup;
+			children = (
+				5E66EE0E22567B57000FF0BE /* JailbreakInternalChecks.swift */,
+			);
+			path = "File Checks";
+			sourceTree = "<group>";
+		};
+		5E66EE0F22567B57000FF0BE /* dyld Module Checks */ = {
+			isa = PBXGroup;
+			children = (
+				5E66EE1022567B57000FF0BE /* JailbreakModules.c */,
+				5E66EE1122567B57000FF0BE /* ModuleLoadedCheck.c */,
+				5E66EE1222567B57000FF0BE /* JailbreakModules.h */,
+				5E66EE1322567B57000FF0BE /* ModuleLoadedCheck.h */,
+			);
+			path = "dyld Module Checks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E66EDB52256782F000FF0BE /* HN4ZHNjZHNhY.h in Headers */,
+				5E66EE1722567B57000FF0BE /* b64.h in Headers */,
+				5E66EE1E22567B57000FF0BE /* JailbreakModules.h in Headers */,
+				5E66EE1F22567B57000FF0BE /* ModuleLoadedCheck.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E66EE1A22567B57000FF0BE /* README.md in Resources */,
+				5E66EE1622567B57000FF0BE /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E66EE1422567B57000FF0BE /* JaibreakTest.swift in Sources */,
+				5E66EE1D22567B57000FF0BE /* ModuleLoadedCheck.c in Sources */,
+				5E66EE1C22567B57000FF0BE /* JailbreakModules.c in Sources */,
+				5E66EE1B22567B57000FF0BE /* JailbreakInternalChecks.swift in Sources */,
+				5E66EE1822567B57000FF0BE /* decode.c in Sources */,
+				5E66EE1522567B57000FF0BE /* String+Base64.swift in Sources */,
+				5E66EE1922567B57000FF0BE /* encode.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +357,7 @@
 		5E66EDB92256782F000FF0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.stoyan-stoyanov.HN4ZHNjZHNhY";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +383,7 @@
 		5E66EDBA2256782F000FF0BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -301,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.stoyan-stoyanov.HN4ZHNjZHNhY";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

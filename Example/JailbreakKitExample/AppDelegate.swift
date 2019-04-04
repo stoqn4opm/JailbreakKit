@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HN4ZHNjZHNhY
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        XMa2xaWF3lZHRMNTRd2OZMMbc1VljG()
+        
         return true
     }
 

@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char HN4ZHNjZHNhYVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <HN4ZHNjZHNhY/PublicHeader.h>
 
 
+#include "JailbreakModules.h"
+#include "b64.h"
