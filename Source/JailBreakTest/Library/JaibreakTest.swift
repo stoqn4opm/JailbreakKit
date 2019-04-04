@@ -18,7 +18,7 @@ import UIKit
 ///
 /// **DO NOT MAKE A FUNCTION WITH A NICER NAME THAT WRAPS THIS ONE!!!!**
 ///
-/// **PLEASE NOTE THAT IF YOU DO, YOU INTRODUCE A EASY HOOK LOCATION FOR METHOD SWIZZLING, AND ATTACKER CAN JUST PATCH THE BINARY
+/// **PLEASE NOTE THAT IF YOU DO, YOU INTRODUCE AN EASY HOOK LOCATION FOR METHOD SWIZZLING, AND ATTACKER CAN JUST PATCH THE BINARY
 /// BY GUESSING WHAT YOUR FUNCTION IS DOING JUST BY THE NAME. IN 'C' AND 'OBJECTIVE-C' APPS, YOU CAN
 /// USE PREPROCESSOR MACROS WITH NICER NAMES.**
 ///
@@ -26,7 +26,7 @@ import UIKit
 /// by looking at the decrypted binary of the app, because the inlining may not happen every time.
 @inline(__always) public func XMa2xaWF3lZHRMNTRd2OZMMbc1VljG() {
     guard sGlGYlWykRChFdlnRkeVhsTTT() else { return }
-    exit(0); // not happy exit because jailbreak was found, but giving status 0 as if everything is fine
+    exit(0) // not happy exit because jailbreak was found, but giving status 0 as if everything is fine
 }
 
 /// Function that checks whether the device is jailbroken or not.
@@ -43,7 +43,7 @@ import UIKit
 ///
 /// **DO NOT MAKE A FUNCTION WITH A NICER NAME THAT WRAPS THIS ONE!!!!**
 ///
-/// **PLEASE NOTE THAT IF YOU DO, YOU INTRODUCE A EASY HOOK LOCATION FOR METHOD SWIZZLING, AND ATTACKER CAN JUST PATCH THE BINARY
+/// **PLEASE NOTE THAT IF YOU DO, YOU INTRODUCE AN EASY HOOK LOCATION FOR METHOD SWIZZLING, AND ATTACKER CAN JUST PATCH THE BINARY
 /// BY GUESSING WHAT YOUR FUNCTION IS DOING JUST BY THE NAME. IN 'C' AND 'OBJECTIVE-C' APPS, YOU CAN
 /// USE PREPROCESSOR MACROS WITH NICER NAMES.**
 ///
@@ -58,9 +58,66 @@ import UIKit
     guard WTNsa2FXRTZMeTl3WVdOcllXZGxMMk52YlM1bGVHRnRjR3hsTG5CaFkydGhaMlU9() == false else { return true } // File System Check 1
     guard FaC5GTsh3RjRnRHVGb1MlY25kMMxGZXllcOdVW3lTeMZTRXF2asNTW()           == false else { return true } // File System Check 2
     
+    guard fvgbHN4ZHN() == false else { return true }
+    return false
+}
+
+/// Function that checks on every 0.5 seconds whether some special `dyld`s
+/// available only on jailbroken devices are dynamically loaded to the process.
+///
+/// ```
+/// func liveBadModulesCheck() -> Bool // non obfuscated name
+/// ```
+///
+/// This function calls every jailbreak dyld check in this framework one by one
+/// and if one of them says the device is jailbroken then crashes the app.
+///
+/// In case of internal errors in the checking process, this function will say that the
+/// device is jailbroken as a safety precaution.
+///
+/// **DO NOT MAKE A FUNCTION WITH A NICER NAME THAT WRAPS THIS ONE!!!!**
+///
+/// **PLEASE NOTE THAT IF YOU DO, YOU INTRODUCE AN EASY HOOK LOCATION FOR METHOD SWIZZLING, AND ATTACKER CAN JUST PATCH THE BINARY
+/// BY GUESSING WHAT YOUR FUNCTION IS DOING JUST BY THE NAME. IN 'C' AND 'OBJECTIVE-C' APPS, YOU CAN
+/// USE PREPROCESSOR MACROS WITH NICER NAMES.**
+///
+/// - Note: This function has a name like this, so that no one could guess what it does
+/// by looking at the decrypted binary of the app, because the inlining may not happen every time.
+@inline(__always) public func sGlGRkeVhsSATvfT() {
+    Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
+        DispatchQueue.global(qos: .background).async {
+            guard fvgbHN4ZHN() == true else { return } // hasBadModulesLoaded()
+            exit(0)
+        }
+    }
+}
+
+/// Function that checks whether some special `dyld`s
+/// available only on jailbroken devices are dynamically loaded to the process.
+///
+/// ```
+/// func hasBadModulesLoaded() -> Bool // non obfuscated name
+/// ```
+///
+/// This function calls every jailbreak dyld check in this framework one by one
+/// and if one of them says the device is jailbroken then the device is considered jailbroken.
+///
+/// In case of internal errors in the checking process, this function will say that the
+/// device is jailbroken as a safety precaution.
+///
+/// **DO NOT MAKE A FUNCTION WITH A NICER NAME THAT WRAPS THIS ONE!!!!**
+///
+/// **PLEASE NOTE THAT IF YOU DO, YOU INTRODUCE AN EASY HOOK LOCATION FOR METHOD SWIZZLING, AND ATTACKER CAN JUST PATCH THE BINARY
+/// BY GUESSING WHAT YOUR FUNCTION IS DOING JUST BY THE NAME. IN 'C' AND 'OBJECTIVE-C' APPS, YOU CAN
+/// USE PREPROCESSOR MACROS WITH NICER NAMES.**
+///
+/// - Note: This function has a name like this, so that no one could guess what it does
+/// by looking at the decrypted binary of the app, because the inlining may not happen every time.
+///
+/// - Returns: true if the device is jailbroken, false if it is not.
+@inline(__always) private func fvgbHN4ZHN() -> Bool {
     guard cacdZHNhZHNhZmRzZmFkc2Zkc2Zkc2ZhZGFzZGE() == false else { return true } // dyld check 1: MobileSubstrate
     guard scdcfvgbHN4ZHNjZHNhYyBnIGdtZGdmZ3NkdnNk() == false else { return true } // dyld check 2: CydiaSubstrate
     guard dmhuZ2ZnaG55dGVyZ3Q1Nnl0dXJldGdm()        == false else { return true } // dyld check 3: Cycript
     return false
 }
-
