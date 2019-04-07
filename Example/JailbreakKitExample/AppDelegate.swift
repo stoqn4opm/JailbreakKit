@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        XMa2xaWF3lZHRMNTRd2OZMMbc1VljG()
 //        eXR1bXlkICB2ZGZ2ZGZ2()
+        mRiYXNnZnZmZGF2Ym()
         return true
     }
 

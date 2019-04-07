@@ -25,6 +25,8 @@
  It will only stop the most unexperienced attackers, who are just trying to attach to the process.
  Please note that this will make XCode not being able to attach its debuger to the process too,
  so run it only in release builds.
+ 
+ source: https://www.theiphonewiki.com/wiki/Bugging_Debuggers
  */
 void eXR1bXlkICB2ZGZ2ZGZ2(void) __attribute__((always_inline)); // void disable_gdb_simple()
 
