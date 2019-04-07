@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E5F64E8225A784A00F17766 /* disable_debug_simple.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5F64E6225A784A00F17766 /* disable_debug_simple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E5F64E9225A784A00F17766 /* disable_debug_simple.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F64E7225A784A00F17766 /* disable_debug_simple.c */; };
 		5E66EDB52256782F000FF0BE /* HN4ZHNjZHNhY.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EDB32256782F000FF0BE /* HN4ZHNjZHNhY.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E66EE1422567B57000FF0BE /* JaibreakTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0322567B57000FF0BE /* JaibreakTest.swift */; };
 		5E66EE1522567B57000FF0BE /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0622567B57000FF0BE /* String+Base64.swift */; };
 		5E66EE1622567B57000FF0BE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E66EE0822567B57000FF0BE /* LICENSE */; };
-		5E66EE1722567B57000FF0BE /* b64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EE0922567B57000FF0BE /* b64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E66EE1722567B57000FF0BE /* b64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E66EE0922567B57000FF0BE /* b64.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5E66EE1822567B57000FF0BE /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0A22567B57000FF0BE /* decode.c */; };
 		5E66EE1922567B57000FF0BE /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E66EE0B22567B57000FF0BE /* encode.c */; };
 		5E66EE1A22567B57000FF0BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E66EE0C22567B57000FF0BE /* README.md */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E5F64E6225A784A00F17766 /* disable_debug_simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disable_debug_simple.h; sourceTree = "<group>"; };
+		5E5F64E7225A784A00F17766 /* disable_debug_simple.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = disable_debug_simple.c; sourceTree = "<group>"; };
 		5E66EDB02256782F000FF0BE /* HN4ZHNjZHNhY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HN4ZHNjZHNhY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E66EDB32256782F000FF0BE /* HN4ZHNjZHNhY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HN4ZHNjZHNhY.h; sourceTree = "<group>"; };
 		5E66EDB42256782F000FF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5F64E5225A781800F17766 /* Disable Debugers */ = {
+			isa = PBXGroup;
+			children = (
+				5E5F64E6225A784A00F17766 /* disable_debug_simple.h */,
+				5E5F64E7225A784A00F17766 /* disable_debug_simple.c */,
+			);
+			path = "Disable Debugers";
+			sourceTree = "<group>";
+		};
 		5E66EDA62256782F000FF0BE = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,7 @@
 		5E66EE0222567B57000FF0BE /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5E5F64E5225A781800F17766 /* Disable Debugers */,
 				5E66EE0322567B57000FF0BE /* JaibreakTest.swift */,
 				5E66EE0D22567B57000FF0BE /* File Checks */,
 				5E66EE0F22567B57000FF0BE /* dyld Module Checks */,
@@ -144,9 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E66EDB52256782F000FF0BE /* HN4ZHNjZHNhY.h in Headers */,
-				5E66EE1722567B57000FF0BE /* b64.h in Headers */,
+				5E5F64E8225A784A00F17766 /* disable_debug_simple.h in Headers */,
 				5E66EE1E22567B57000FF0BE /* JailbreakModules.h in Headers */,
 				5E66EE1F22567B57000FF0BE /* ModuleLoadedCheck.h in Headers */,
+				5E66EE1722567B57000FF0BE /* b64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +236,7 @@
 			files = (
 				5E66EE1422567B57000FF0BE /* JaibreakTest.swift in Sources */,
 				5E66EE1D22567B57000FF0BE /* ModuleLoadedCheck.c in Sources */,
+				5E5F64E9225A784A00F17766 /* disable_debug_simple.c in Sources */,
 				5E66EE1C22567B57000FF0BE /* JailbreakModules.c in Sources */,
 				5E66EE1B22567B57000FF0BE /* JailbreakInternalChecks.swift in Sources */,
 				5E66EE1822567B57000FF0BE /* decode.c in Sources */,

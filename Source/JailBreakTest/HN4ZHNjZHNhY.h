@@ -18,4 +18,4 @@ FOUNDATION_EXPORT const unsigned char HN4ZHNjZHNhYVersionString[];
 
 
 #include "JailbreakModules.h"
-#include "b64.h"
+#include "disable_debug_simple.h"

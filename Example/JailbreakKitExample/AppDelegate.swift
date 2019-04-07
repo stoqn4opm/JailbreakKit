@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 //        XMa2xaWF3lZHRMNTRd2OZMMbc1VljG()
-        sGlGRkeVhsSATvfT()
+//        eXR1bXlkICB2ZGZ2ZGZ2()
         return true
     }
 
